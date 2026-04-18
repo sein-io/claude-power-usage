@@ -1,14 +1,4 @@
-# OS files
-.DS_Store
-Thumbs.db
-
-# Extension specific
 *.zip
 *.crx
-
-# IDEs
-.vscode/
-.cursor/
-
-# Optional: Strategy/Private docs (falls du sie nicht öffentlich willst)
-# docs/STRATEGY.md
+.DS_Store
+docs/STRATEGY.md
