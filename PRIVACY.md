@@ -12,9 +12,54 @@ Claude Power Usage was built from the ground up with strict privacy and security
 
 The extension operates entirely locally within your browser. All data processing happens on your device. We do not collect, transmit, or sell your personal information, your conversation history, or your usage metrics to anyone.
 
-## Local Chat History (v1.10+, Optional Feature)
+## Data Handling Categories (CWS Disclosure)
 
-Starting with v1.10, Claude Power Usage offers an **optional** feature to locally store your Claude conversations for export purposes. This feature is **disabled by default** and must be explicitly enabled by the user.
+To comply with Chrome Web Store transparency requirements, here is exactly
+what data categories the extension handles, in each of three stages:
+
+### Collected (temporarily, for dashboard display)
+
+Claude Power Usage intercepts network activity on claude.ai to enable
+its real-time dashboard. Specifically:
+
+- **Network requests** to claude.ai API endpoints (completion, conversations,
+  usage) are observed via a local `fetch()` wrapper
+- **Response streams** are read to count tokens and detect model/cost data
+- **DOM state** on claude.ai is observed to detect rate-limit banners and
+  conversation metadata
+
+This observation happens entirely in your browser's local JavaScript context.
+No observed data is sent anywhere.
+
+### Stored (persistently, on your device only)
+
+The extension saves a limited set of data to `chrome.storage.local`:
+
+- Your settings (theme, language, HUD preferences, notification thresholds)
+- Usage history snapshots (percentages, timestamps) — anonymized and aggregated
+- Rate-limit event log (timestamps only)
+- Detected code blocks from Claude responses (for the Assets tab)
+- **Optional** chat history (opt-in only, see "Local Chat History" section below)
+
+All storage is on your device, in your browser profile. It is never synced
+to any Google or external cloud service.
+
+### Transmitted (never)
+
+No data is transmitted to any external server at any time. The extension
+operates with zero network egress to third parties. Your data does not
+leave your browser.
+
+### Why "User Activity" is declared in our Chrome Web Store listing
+
+Chrome Web Store categorizes **any** form of network-request observation
+as "User Activity", even when the observation is purely local and
+read-only. We declare this truthfully to maintain transparency, even
+though the observed data is never collected in any traditional sense.
+
+## Local Chat History (Optional Feature)
+
+Claude Power Usage offers an **optional** feature to locally store your Claude conversations for export purposes. This feature is **disabled by default** and must be explicitly enabled by the user.
 
 ### What is stored
 When enabled, the extension saves the following data in your browser's local storage (`chrome.storage.local`):
@@ -70,5 +115,4 @@ If you have any questions or concerns regarding this privacy policy, please open
 ---
 
 **Change log:**
-- 2026-04-11: Added "Local Chat History" section for v1.10 opt-in feature
-- 2025-11-14: Initial privacy policy drafted
+- 2026-04-12: Initial public release (v1.0.0), CWS transparency disclosures added
