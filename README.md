@@ -27,7 +27,7 @@ The result: a tachometer-style gauge that shows your usage at a glance, with a f
 - **Context Window Meter** — How much of the 200K token window this conversation uses
 - **Peak Hour Indicator** — Warns when weekday peak hours (12:00–18:00 UTC / approx. 5am–11am PT) are active
 
-### Privacy & Export (v1.10+)
+### Privacy & Export
 - **Local Chat History** — Opt-in local storage of your conversations
 - **Markdown Export** — Download chats as clean `.md` files with code blocks preserved
 - **Zero Data Collection** — All data remains exclusively on your device
@@ -62,10 +62,9 @@ See [PRIVACY.md](./PRIVACY.md) for the full privacy policy.
 
 | Version | Milestone |
 |---------|-----------|
-| **0.7** | Core gauges, HUD, Side Panel, peak hours, context window safety |
-| **0.9** | Local Chat History, Markdown Export, Privacy Opt-In |
-| **1.0** | Fixing minor bugs, implementing SVG as standard for all symbols  |
-| **2.0** | (Deferred pending ToS review) Claude Scheduler (queue + auto-submit) |
+| **1.0.0** | Initial Release: Core gauges, HUD, Side Panel, Local Chat History, Markdown Export |
+| **1.1.0** | Advanced Analytics & Custom Alert Thresholds |
+| **2.0.0** | (Deferred pending ToS review) Claude Scheduler (queue + auto-submit) |
 
 ---
 
