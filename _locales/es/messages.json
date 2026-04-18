@@ -1,0 +1,146 @@
+{
+    "extName": {
+        "message": "Claude Power Usage"
+    },
+    "extDesc": {
+        "message": "Seguimiento de uso en tiempo real, visualización de ventana de contexto e inteligencia de límites para Claude.ai"
+    },
+    "tab_dashboard": {
+        "message": "Panel"
+    },
+    "tab_assets": {
+        "message": "Activos"
+    },
+    "tab_analytics": {
+        "message": "Analítica"
+    },
+    "tab_settings": {
+        "message": "Ajustes"
+    },
+    "session_5h": {
+        "message": "Sesión 5h"
+    },
+    "weekly_all": {
+        "message": "Semanal Total"
+    },
+    "weekly_opus": {
+        "message": "Semanal Opus"
+    },
+    "ctx_window": {
+        "message": "Ventana de Contexto"
+    },
+    "session_cost": {
+        "message": "Costo de Sesión"
+    },
+    "conversation": {
+        "message": "Conversación"
+    },
+    "messages": {
+        "message": "Mensajes"
+    },
+    "last_msg": {
+        "message": "Último Msj $"
+    },
+    "peak_active": {
+        "message": "Horas Pico — los límites se agotan más rápido"
+    },
+    "rate_limit": {
+        "message": "Límite Alcanzado"
+    },
+    "assets_title": {
+        "message": "Bloques de Código y Artefactos"
+    },
+    "assets_desc": {
+        "message": "Capturados automáticamente de las respuestas de Claude."
+    },
+    "no_assets": {
+        "message": "No hay activos aún. Inicia una conversación y los bloques de código aparecerán aquí."
+    },
+    "usage_trend": {
+        "message": "Tendencia (7d)"
+    },
+    "rl_hits": {
+        "message": "Límites Alcanzados"
+    },
+    "avg_cooldown": {
+        "message": "Enfriamiento Prom."
+    },
+    "total_tokens": {
+        "message": "Tokens Totales"
+    },
+    "total_cost": {
+        "message": "Costo Total"
+    },
+    "history": {
+        "message": "Historial"
+    },
+    "prompt_history": {
+        "message": "Historial de Prompts"
+    },
+    "no_data": {
+        "message": "Sin datos aún. Las capturas se guardan cada 5 minutos."
+    },
+    "no_prompts": {
+        "message": "Aún no hay prompts registrados."
+    },
+    "show_hud": {
+        "message": "HUD Flotante"
+    },
+    "gauge_mode": {
+        "message": "Estilo"
+    },
+    "mini_mode": {
+        "message": "Mini HUD"
+    },
+    "reset_pos": {
+        "message": "Restablecer HUD"
+    },
+    "appearance": {
+        "message": "Apariencia"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "language": {
+        "message": "Idioma"
+    },
+    "refresh_title": {
+        "message": "Actualizar"
+    },
+    "adaptive": {
+        "message": "Actualización adaptativa"
+    },
+    "base_interval": {
+        "message": "Intervalo base"
+    },
+    "notifications": {
+        "message": "Notificaciones"
+    },
+    "notify_limit": {
+        "message": "Notificar al acercarse al límite"
+    },
+    "notify_reset": {
+        "message": "Notificar al restablecer"
+    },
+    "threshold": {
+        "message": "Umbral"
+    },
+    "clear": {
+        "message": "Borrar"
+    },
+    "copy": {
+        "message": "Copiar"
+    },
+    "delete_asset": {
+        "message": "Eliminar"
+    },
+    "ctx_warn_label": {
+        "message": "180k+ Riesgo de Olvido"
+    },
+    "ctx_warn_title": {
+        "message": ">180k Riesgo"
+    },
+    "waiting_prompt": {
+        "message": "Esperando el prompt..."
+    }
+}

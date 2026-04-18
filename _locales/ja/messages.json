@@ -1,0 +1,146 @@
+{
+    "extName": {
+        "message": "Claude Power Usage"
+    },
+    "extDesc": {
+        "message": "Claude.aiのリアルタイム使用量追跡、コンテキストウィンドウの視覚化、レート制限の把握"
+    },
+    "tab_dashboard": {
+        "message": "ダッシュボード"
+    },
+    "tab_assets": {
+        "message": "アセット"
+    },
+    "tab_analytics": {
+        "message": "分析"
+    },
+    "tab_settings": {
+        "message": "設定"
+    },
+    "session_5h": {
+        "message": "5時間セッション"
+    },
+    "weekly_all": {
+        "message": "週間 全モデル"
+    },
+    "weekly_opus": {
+        "message": "週間 Opus"
+    },
+    "ctx_window": {
+        "message": "コンテキストウィンドウ"
+    },
+    "session_cost": {
+        "message": "セッションコスト"
+    },
+    "conversation": {
+        "message": "会話"
+    },
+    "messages": {
+        "message": "メッセージ数"
+    },
+    "last_msg": {
+        "message": "最後のメッセージ $"
+    },
+    "peak_active": {
+        "message": "ピーク時間 — 制限消費が早くなります"
+    },
+    "rate_limit": {
+        "message": "レート制限到達"
+    },
+    "assets_title": {
+        "message": "コードブロックとアーティファクト"
+    },
+    "assets_desc": {
+        "message": "Claudeの応答から自動的にキャプチャされます。"
+    },
+    "no_assets": {
+        "message": "アセットはまだありません。会話を開始するとここに表示されます。"
+    },
+    "usage_trend": {
+        "message": "使用トレンド (7日)"
+    },
+    "rl_hits": {
+        "message": "制限到達回数"
+    },
+    "avg_cooldown": {
+        "message": "平均待機時間"
+    },
+    "total_tokens": {
+        "message": "総トークン"
+    },
+    "total_cost": {
+        "message": "総コスト"
+    },
+    "history": {
+        "message": "履歴"
+    },
+    "prompt_history": {
+        "message": "プロンプト履歴"
+    },
+    "no_data": {
+        "message": "データがありません。スナップショットは5分ごとに記録されます。"
+    },
+    "no_prompts": {
+        "message": "プロンプトはまだ記録されていません。"
+    },
+    "show_hud": {
+        "message": "フローティングHUD"
+    },
+    "gauge_mode": {
+        "message": "スタイル"
+    },
+    "mini_mode": {
+        "message": "ミニHUD"
+    },
+    "reset_pos": {
+        "message": "HUDをリセット"
+    },
+    "appearance": {
+        "message": "外観"
+    },
+    "theme": {
+        "message": "テーマ"
+    },
+    "language": {
+        "message": "言語"
+    },
+    "refresh_title": {
+        "message": "更新"
+    },
+    "adaptive": {
+        "message": "適応型更新"
+    },
+    "base_interval": {
+        "message": "基本間隔"
+    },
+    "notifications": {
+        "message": "通知"
+    },
+    "notify_limit": {
+        "message": "制限に近づいたら通知"
+    },
+    "notify_reset": {
+        "message": "リセット時に通知"
+    },
+    "threshold": {
+        "message": "しきい値"
+    },
+    "clear": {
+        "message": "クリア"
+    },
+    "copy": {
+        "message": "コピー"
+    },
+    "delete_asset": {
+        "message": "削除"
+    },
+    "ctx_warn_label": {
+        "message": "180k+ 忘却リスク"
+    },
+    "ctx_warn_title": {
+        "message": ">180k リスク"
+    },
+    "waiting_prompt": {
+        "message": "プロンプトを待機中..."
+    }
+}

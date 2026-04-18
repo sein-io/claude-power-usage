@@ -1,0 +1,146 @@
+{
+    "extName": {
+        "message": "Claude Power Usage"
+    },
+    "extDesc": {
+        "message": "Suivi en temps réel, visualisation de la fenêtre de contexte et intelligence des limites pour Claude.ai"
+    },
+    "tab_dashboard": {
+        "message": "Tableau de bord"
+    },
+    "tab_assets": {
+        "message": "Actifs"
+    },
+    "tab_analytics": {
+        "message": "Analytique"
+    },
+    "tab_settings": {
+        "message": "Paramètres"
+    },
+    "session_5h": {
+        "message": "Session 5h"
+    },
+    "weekly_all": {
+        "message": "Hebdo Total"
+    },
+    "weekly_opus": {
+        "message": "Hebdo Opus"
+    },
+    "ctx_window": {
+        "message": "Fenêtre de Contexte"
+    },
+    "session_cost": {
+        "message": "Coût de Session"
+    },
+    "conversation": {
+        "message": "Conversation"
+    },
+    "messages": {
+        "message": "Messages"
+    },
+    "last_msg": {
+        "message": "Dernier Msg $"
+    },
+    "peak_active": {
+        "message": "Heures de Pointe — limites atteintes plus vite"
+    },
+    "rate_limit": {
+        "message": "Limite Atteinte"
+    },
+    "assets_title": {
+        "message": "Blocs de Code et Artefacts"
+    },
+    "assets_desc": {
+        "message": "Capturés automatiquement depuis les réponses de Claude."
+    },
+    "no_assets": {
+        "message": "Aucun actif. Démarrez une conversation et les blocs de code apparaîtront ici."
+    },
+    "usage_trend": {
+        "message": "Tendance (7j)"
+    },
+    "rl_hits": {
+        "message": "Limites Atteintes"
+    },
+    "avg_cooldown": {
+        "message": "Refroidissement Moy."
+    },
+    "total_tokens": {
+        "message": "Jetons Totaux"
+    },
+    "total_cost": {
+        "message": "Coût Total"
+    },
+    "history": {
+        "message": "Historique"
+    },
+    "prompt_history": {
+        "message": "Historique des Prompts"
+    },
+    "no_data": {
+        "message": "Aucune donnée. Les instantanés sont pris toutes les 5 minutes."
+    },
+    "no_prompts": {
+        "message": "Aucun prompt enregistré."
+    },
+    "show_hud": {
+        "message": "HUD Flottant"
+    },
+    "gauge_mode": {
+        "message": "Style"
+    },
+    "mini_mode": {
+        "message": "Mini HUD"
+    },
+    "reset_pos": {
+        "message": "Réinitialiser HUD"
+    },
+    "appearance": {
+        "message": "Apparence"
+    },
+    "theme": {
+        "message": "Thème"
+    },
+    "language": {
+        "message": "Langue"
+    },
+    "refresh_title": {
+        "message": "Actualiser"
+    },
+    "adaptive": {
+        "message": "Actualisation adaptative"
+    },
+    "base_interval": {
+        "message": "Intervalle de base"
+    },
+    "notifications": {
+        "message": "Notifications"
+    },
+    "notify_limit": {
+        "message": "Notifier à l'approche de la limite"
+    },
+    "notify_reset": {
+        "message": "Notifier lors de la réinitialisation"
+    },
+    "threshold": {
+        "message": "Seuil"
+    },
+    "clear": {
+        "message": "Effacer"
+    },
+    "copy": {
+        "message": "Copier"
+    },
+    "delete_asset": {
+        "message": "Supprimer"
+    },
+    "ctx_warn_label": {
+        "message": "180k+ Risque d'Oubli"
+    },
+    "ctx_warn_title": {
+        "message": ">180k Risque"
+    },
+    "waiting_prompt": {
+        "message": "En attente du prompt..."
+    }
+}

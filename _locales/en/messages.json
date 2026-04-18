@@ -1,0 +1,146 @@
+{
+    "extName": {
+        "message": "Claude Power Usage"
+    },
+    "extDesc": {
+        "message": "Real-time usage tracking, context window visualization, and rate limit intelligence for Claude.ai"
+    },
+    "tab_dashboard": {
+        "message": "Dashboard"
+    },
+    "tab_assets": {
+        "message": "Assets"
+    },
+    "tab_analytics": {
+        "message": "Analytics"
+    },
+    "tab_settings": {
+        "message": "Settings"
+    },
+    "session_5h": {
+        "message": "5h Session"
+    },
+    "weekly_all": {
+        "message": "Weekly All"
+    },
+    "weekly_opus": {
+        "message": "Weekly Opus"
+    },
+    "ctx_window": {
+        "message": "Context Window"
+    },
+    "session_cost": {
+        "message": "Session Cost"
+    },
+    "conversation": {
+        "message": "Conversation"
+    },
+    "messages": {
+        "message": "Messages"
+    },
+    "last_msg": {
+        "message": "Last Msg $"
+    },
+    "peak_active": {
+        "message": "Peak Hours — limits burn faster"
+    },
+    "rate_limit": {
+        "message": "Rate Limit Hit"
+    },
+    "assets_title": {
+        "message": "Code Blocks & Artifacts"
+    },
+    "assets_desc": {
+        "message": "Automatically captured from Claude responses."
+    },
+    "no_assets": {
+        "message": "No assets captured yet. Start a conversation and code blocks will appear here."
+    },
+    "usage_trend": {
+        "message": "Usage Trend (7d)"
+    },
+    "rl_hits": {
+        "message": "Rate Limits"
+    },
+    "avg_cooldown": {
+        "message": "Avg Cooldown"
+    },
+    "total_tokens": {
+        "message": "Total Tokens"
+    },
+    "total_cost": {
+        "message": "Total Cost"
+    },
+    "history": {
+        "message": "History"
+    },
+    "prompt_history": {
+        "message": "Prompt History"
+    },
+    "no_data": {
+        "message": "No data yet. Snapshots are recorded every 5 minutes."
+    },
+    "no_prompts": {
+        "message": "No prompts recorded yet."
+    },
+    "show_hud": {
+        "message": "Floating HUD"
+    },
+    "gauge_mode": {
+        "message": "Style"
+    },
+    "mini_mode": {
+        "message": "Mini HUD"
+    },
+    "reset_pos": {
+        "message": "Reset HUD"
+    },
+    "appearance": {
+        "message": "Appearance"
+    },
+    "theme": {
+        "message": "Theme"
+    },
+    "language": {
+        "message": "Language"
+    },
+    "refresh_title": {
+        "message": "Refresh"
+    },
+    "adaptive": {
+        "message": "Adaptive refresh"
+    },
+    "base_interval": {
+        "message": "Base interval"
+    },
+    "notifications": {
+        "message": "Notifications"
+    },
+    "notify_limit": {
+        "message": "Notify on approaching limit"
+    },
+    "notify_reset": {
+        "message": "Notify on reset"
+    },
+    "threshold": {
+        "message": "Threshold"
+    },
+    "clear": {
+        "message": "Clear"
+    },
+    "copy": {
+        "message": "Copy"
+    },
+    "delete_asset": {
+        "message": "Delete"
+    },
+    "ctx_warn_label": {
+        "message": "180k+ Forgetting Risk"
+    },
+    "ctx_warn_title": {
+        "message": ">180k Risk"
+    },
+    "waiting_prompt": {
+        "message": "Waiting for prompt..."
+    }
+}

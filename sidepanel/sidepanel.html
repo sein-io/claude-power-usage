@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Claude Power Usage</title><link rel="stylesheet" href="sidepanel.css"></head>
+<body>
+<header class="sp-hdr">
+<div class="hdr-brand"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--accent)" stroke-width="2"/><path d="M12 6V12L16 14" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="2" fill="var(--accent)"/></svg><span class="hdr-title">Claude Power Usage</span><span class="hdr-ver">1.0.0</span></div>
+<div class="hdr-acts">
+    <button id="btn-refresh" class="ic-btn" title="Refresh usage data"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M21 13a9 9 0 1 1-3-7.7L21 8"/></svg></button>
+    <button id="btn-theme" class="ic-btn" title="System Mode"></button>
+</div>
+</header>
+<nav class="tab-bar">
+    <button class="tab active" data-tab="dashboard" title="Dashboard"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg></button>
+    <button class="tab" data-tab="assets" title="Assets"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></button>
+    <button class="tab" data-tab="analytics" title="Analytics"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></button>
+    <button class="tab" data-tab="settings" title="Settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+</nav>
+<main class="panel">
+
+<section id="tab-dashboard" class="tp active">
+<div class="bg">
+<div class="bc b2x2 gc" id="c-gauge"><canvas id="main-cv" width="280" height="140"></canvas></div>
+<div class="bc b1 gc"><div class="cl" data-t="session_5h">5h Session</div><div class="cg"><div class="gt"><div class="gf" id="sp-sf"></div></div><span class="gp" id="sp-sp">0%</span></div><div class="cs" id="sp-sr"></div></div>
+<div class="bc b1 gc"><div class="cl" data-t="weekly_all">Weekly All</div><div class="cg"><div class="gt"><div class="gf" id="sp-wf"></div></div><span class="gp" id="sp-wp">0%</span></div><div class="cs" id="sp-wr"></div></div>
+<div class="bc b1 gc"><div class="cl" data-t="weekly_opus">Weekly Opus</div><div class="cg"><div class="gt"><div class="gf" id="sp-of"></div></div><span class="gp" id="sp-op">0%</span></div><div class="cs" id="sp-or"></div></div>
+<div class="bc b1 gc">
+    <div class="cl" data-t="ctx_window">Context Window</div>
+    <div class="cg"><div class="gt"><div class="gf gf-ctx" id="sp-cf"></div></div><span class="gp" id="sp-cp">0%</span></div>
+    <div class="cs" id="sp-ct">0 / 200K</div>
+    <div id="ctx-warn" class="ctx-warn-msg">
+        <svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2L1 14h14L8 2z"/><path d="M8 6v4M8 12h.01"/></svg> 
+        <span data-t="ctx_warn_label">180k+ Forgetting Risk</span>
+    </div>
+</div>
+<div class="bc b2 gc"><div class="mir"><div><div class="cl">Model</div><div class="cv ac" id="sp-mod"></div></div><div class="mir-r"><div class="cl" data-t="session_cost">Session Cost</div><div class="cv mono" id="sp-cst">$0.0000</div></div></div></div>
+<div class="bc b2 gc"><div class="cl" data-t="conversation">Conversation</div><div class="cv trunc" id="sp-chn"></div><div class="cs mono" id="sp-cid" style="font-size:9px;opacity:.4"></div><div class="cs" id="sp-chm"></div></div>
+<div class="bc b1 gc"><div class="cl">Input</div><div class="cv mono" id="sp-ti">0</div></div>
+<div class="bc b1 gc"><div class="cl">Output</div><div class="cv mono" id="sp-to">0</div></div>
+<div class="bc b1 gc"><div class="cl" data-t="messages">Messages</div><div class="cv mono" id="sp-mc">0</div></div>
+<div class="bc b1 gc"><div class="cl" data-t="last_msg">Last Msg $</div><div class="cv mono" id="sp-lc">$0.0000</div></div>
+<div class="bc b2 gc" id="c-peak" style="display:none"><div class="pk-ban"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#f59e0b" stroke-width="1.5"><path d="M8 2L1 14h14L8 2z"/><path d="M8 6v4M8 12h.01"/></svg> <span data-t="peak_active">Peak Hours — limits burn faster</span></div></div>
+<div class="bc b2 gc" id="c-rl" style="display:none"><div class="rl-ban"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#ef4444" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M5 5l6 6M11 5l-6 6"/></svg> <span data-t="rate_limit">Rate Limit Hit</span></div></div>
+</div>
+</section>
+
+<section id="tab-assets" class="tp">
+<div class="bg">
+<div class="bc b2 gc"><div class="cl" data-t="assets_title">Code Blocks &amp; Artifacts</div><div class="cs" data-t="assets_desc">Automatically captured from Claude responses.</div></div>
+<div class="bc b2 gc" id="c-assets"><div class="cs" data-t="no_assets">No assets captured yet. Start a conversation and code blocks will appear here.</div></div>
+<div class="bc b2 gc"><div class="aa"><button class="btn bs" id="btn-export-assets">Export All</button><button class="btn bg2" id="btn-clear-assets" data-t="clear">Clear</button></div></div>
+</div>
+</section>
+
+<section id="tab-analytics" class="tp">
+<div class="bg">
+<div class="bc b2x2 gc"><div class="cl" data-t="usage_trend">Usage Trend (7d)</div><canvas id="trend-cv" width="280" height="100"></canvas></div>
+<div class="bc b1 gc"><div class="cl" data-t="rl_hits">Rate Limits</div><div class="cv stat" id="sp-rlc">0</div></div>
+<div class="bc b1 gc"><div class="cl" data-t="avg_cooldown">Avg Cooldown</div><div class="cv stat" id="sp-rla">-</div></div>
+
+<div class="bc b2x2 gc">
+    <div id="hist-active" style="display:none;">
+        <div class="cl" data-t="history">Chat History</div>
+        <div class="cs wrap" id="sp-hi"></div>
+        <div class="aa" style="margin-top:8px">
+            <button class="btn bs" id="btn-export">Export Usage JSON</button>
+            <button class="btn bg2" id="btn-clear" data-t="clear">Clear Analytics</button>
+        </div>
+        <div id="sp-chat-list" class="ph-list" style="margin-top:16px;"></div>
+    </div>
+
+    <div id="hist-optin" class="privacy-box">
+        <div class="pb-icon"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none"><path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/></svg></div>
+        <div class="pb-title">Chat History</div>
+        <div class="pb-desc">Local chat history is disabled to protect your privacy. Enable it to export your Claude conversations as Markdown or JSON.</div>
+        <ul class="pb-list">
+            <li>Stored only on this device</li>
+            <li>Never transmitted anywhere</li>
+            <li>50 most recent chats (rolling)</li>
+            <li>Disable &amp; purge anytime</li>
+        </ul>
+        <div class="pb-acts">
+            <button class="btn bs" id="btn-enable-hist">Enable Chat History</button>
+            <a href="#" class="lnk pb-link" id="lnk-hist-settings">Or manage in Settings →</a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<section id="tab-settings" class="tp">
+<div class="sl">
+<div class="sg"><div class="sgt">HUD Overlay</div>
+<div class="sr"><span class="slb" data-t="show_hud">Floating HUD</span><input type="checkbox" id="s-hud" checked></div>
+<div class="sr"><span class="slb" data-t="gauge_mode">Style</span><select id="s-mode"><option value="analog">Analog</option><option value="digital">Digital</option></select></div>
+<div class="sr"><span class="slb" data-t="mini_mode">Mini HUD</span><select id="s-mini"><option value="dual">Dual (Session + Weekly)</option><option value="digital">Digital bars</option><option value="session">Session only</option><option value="weekly">Weekly only</option></select></div>
+<div class="sr"><span class="slb" data-t="reset_pos">Reset HUD</span><button class="btn bg2" id="btn-rpos">Reset</button></div>
+</div>
+<div class="sg"><div class="sgt" data-t="appearance">Appearance</div>
+<div class="sr"><span class="slb" data-t="theme">Theme</span><select id="s-theme"><option value="light">Light</option><option value="dark">Dark</option><option value="system">System</option></select></div>
+<div class="sr"><span class="slb" data-t="language">Language</span><select id="s-lang"><option value="en">English</option><option value="de">Deutsch</option><option value="tr">Türkçe</option></select></div>
+</div>
+<div class="sg"><div class="sgt">Privacy &amp; Storage</div>
+<div class="sr"><span class="slb">Local Chat History</span><input type="checkbox" id="s-hist"></div>
+<div class="sr"><span class="slb">Storage used</span><span class="sv mono" id="s-storage">0.0 MB / 10 MB</span></div>
+<div class="sr"><span class="slb">Purge History</span><button class="btn bg2" id="btn-purge-hist" style="color:var(--err)">Purge All</button></div>
+<div class="sr" style="margin-top:8px"><a href="https://github.com/seinsio/claude-power-usage/blob/main/PRIVACY.md" target="_blank" class="lnk" style="font-size:11px">Read Privacy Policy</a></div>
+</div>
+<div class="sg"><div class="sgt" data-t="refresh_title">Refresh</div>
+<div class="sr"><span class="slb" data-t="adaptive">Adaptive refresh</span><input type="checkbox" id="s-adapt" checked></div>
+<div class="sr"><span class="slb" data-t="base_interval">Base interval</span><select id="s-intv"><option value="60">1 min</option><option value="120" selected>2 min</option><option value="300">5 min</option></select></div>
+</div>
+<div class="sg"><div class="sgt" data-t="notifications">Notifications</div>
+<div class="sr"><span class="slb" data-t="notify_limit">Notify on approaching limit</span><input type="checkbox" id="s-nlim" checked></div>
+<div class="sr"><span class="slb" data-t="notify_reset">Notify on reset</span><input type="checkbox" id="s-nrst" checked></div>
+<div class="sr"><span class="slb" data-t="threshold">Threshold</span><select id="s-thr"><option value="60">60%</option><option value="70">70%</option><option value="80" selected>80%</option><option value="90">90%</option></select></div>
+</div>
+<div class="sg"><div class="sgt">About</div>
+<div class="sr"><span class="slb">Version</span><span class="sv">1.0.0</span></div>
+<div class="sr"><span class="slb">Author</span><span class="sv"><a href="https://sein.io" target="_blank" class="lnk">sein</a></span></div>
+<div class="sr"><span class="slb">Source</span><span class="sv"><a href="https://github.com/seinsio/claude-power-usage" target="_blank" class="lnk">GitHub</a></span></div>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="sp-ft"><span id="ft-url" class="mono trunc"></span><span id="ft-time" class="mono"></span></footer>
+<script src="sidepanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+{
+    "extName": {
+        "message": "Claude Power Usage"
+    },
+    "extDesc": {
+        "message": "Claude.ai için gerçek zamanlı kullanım takibi, bağlam penceresi görselleştirme ve kota zekası"
+    },
+    "tab_dashboard": {
+        "message": "Panel"
+    },
+    "tab_assets": {
+        "message": "Assets"
+    },
+    "tab_analytics": {
+        "message": "Analiz"
+    },
+    "tab_settings": {
+        "message": "Ayarlar"
+    },
+    "session_5h": {
+        "message": "5s Session"
+    },
+    "weekly_all": {
+        "message": "Weekly All"
+    },
+    "weekly_opus": {
+        "message": "Weekly Opus"
+    },
+    "ctx_window": {
+        "message": "Context Window"
+    },
+    "session_cost": {
+        "message": "Session Cost"
+    },
+    "conversation": {
+        "message": "Conversation"
+    },
+    "messages": {
+        "message": "Messages"
+    },
+    "last_msg": {
+        "message": "Last Msg $"
+    },
+    "peak_active": {
+        "message": "Peak Hours — limitler daha hızlı tükenir"
+    },
+    "rate_limit": {
+        "message": "Rate Limit aşıldı"
+    },
+    "assets_title": {
+        "message": "Code Blocks & Artifacts"
+    },
+    "assets_desc": {
+        "message": "Claude yanıtlarından otomatik olarak yakalandı."
+    },
+    "no_assets": {
+        "message": "Henüz asset yakalanmadı. Bir sohbet başlatın ve kod blokları burada görünecek."
+    },
+    "usage_trend": {
+        "message": "Kullanım Trendi (7g)"
+    },
+    "rl_hits": {
+        "message": "Rate Limits"
+    },
+    "avg_cooldown": {
+        "message": "Ort. Bekleme"
+    },
+    "total_tokens": {
+        "message": "Toplam Token"
+    },
+    "total_cost": {
+        "message": "Toplam Maliyet"
+    },
+    "history": {
+        "message": "Geçmiş"
+    },
+    "prompt_history": {
+        "message": "Prompt Geçmişi"
+    },
+    "no_data": {
+        "message": "Henüz veri yok. Anlık görüntüler her 5 dakikada kaydedilir."
+    },
+    "no_prompts": {
+        "message": "Henüz prompt kaydedilmedi."
+    },
+    "show_hud": {
+        "message": "Yüzen HUD"
+    },
+    "gauge_mode": {
+        "message": "Stil"
+    },
+    "mini_mode": {
+        "message": "Mini HUD"
+    },
+    "reset_pos": {
+        "message": "HUD sıfırla"
+    },
+    "appearance": {
+        "message": "Görünüm"
+    },
+    "theme": {
+        "message": "Tema"
+    },
+    "language": {
+        "message": "Dil"
+    },
+    "refresh_title": {
+        "message": "Yenileme"
+    },
+    "adaptive": {
+        "message": "Adaptif yenileme"
+    },
+    "base_interval": {
+        "message": "Temel aralık"
+    },
+    "notifications": {
+        "message": "Bildirimler"
+    },
+    "notify_limit": {
+        "message": "Limite yaklaşırken bildir"
+    },
+    "notify_reset": {
+        "message": "Sıfırlamada bildir"
+    },
+    "threshold": {
+        "message": "Eşik"
+    },
+    "clear": {
+        "message": "Temizle"
+    },
+    "copy": {
+        "message": "Kopyala"
+    },
+    "delete_asset": {
+        "message": "Sil"
+    },
+    "ctx_warn_label": {
+        "message": "180k+ Unutma Riski"
+    },
+    "ctx_warn_title": {
+        "message": ">180k Risk"
+    },
+    "waiting_prompt": {
+        "message": "İstem bekleniyor..."
+    }
+}

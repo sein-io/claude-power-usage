@@ -1,0 +1,146 @@
+{
+    "extName": {
+        "message": "Claude Power Usage"
+    },
+    "extDesc": {
+        "message": "Claude.ai 的即時使用量追蹤、上下文視窗視覺化和限制提醒"
+    },
+    "tab_dashboard": {
+        "message": "儀表板"
+    },
+    "tab_assets": {
+        "message": "資產"
+    },
+    "tab_analytics": {
+        "message": "分析"
+    },
+    "tab_settings": {
+        "message": "設定"
+    },
+    "session_5h": {
+        "message": "5小時會話"
+    },
+    "weekly_all": {
+        "message": "每週全部"
+    },
+    "weekly_opus": {
+        "message": "每週 Opus"
+    },
+    "ctx_window": {
+        "message": "上下文視窗"
+    },
+    "session_cost": {
+        "message": "會話成本"
+    },
+    "conversation": {
+        "message": "對話"
+    },
+    "messages": {
+        "message": "訊息數"
+    },
+    "last_msg": {
+        "message": "最後訊息 $"
+    },
+    "peak_active": {
+        "message": "尖峰時段 — 限制消耗更快"
+    },
+    "rate_limit": {
+        "message": "達到速率限制"
+    },
+    "assets_title": {
+        "message": "程式碼區塊與 Artifacts"
+    },
+    "assets_desc": {
+        "message": "從 Claude 回覆中自動擷取。"
+    },
+    "no_assets": {
+        "message": "尚未擷取任何資產。開始對話後，程式碼區塊將顯示於此。"
+    },
+    "usage_trend": {
+        "message": "使用趨勢 (7天)"
+    },
+    "rl_hits": {
+        "message": "達到限制次數"
+    },
+    "avg_cooldown": {
+        "message": "平均冷卻時間"
+    },
+    "total_tokens": {
+        "message": "總 Token"
+    },
+    "total_cost": {
+        "message": "總成本"
+    },
+    "history": {
+        "message": "歷史記錄"
+    },
+    "prompt_history": {
+        "message": "提示詞歷史"
+    },
+    "no_data": {
+        "message": "尚無資料。每 5 分鐘記錄一次快照。"
+    },
+    "no_prompts": {
+        "message": "尚未記錄任何提示詞。"
+    },
+    "show_hud": {
+        "message": "懸浮 HUD"
+    },
+    "gauge_mode": {
+        "message": "樣式"
+    },
+    "mini_mode": {
+        "message": "迷你 HUD"
+    },
+    "reset_pos": {
+        "message": "重設 HUD"
+    },
+    "appearance": {
+        "message": "外觀"
+    },
+    "theme": {
+        "message": "主題"
+    },
+    "language": {
+        "message": "語言"
+    },
+    "refresh_title": {
+        "message": "重新整理"
+    },
+    "adaptive": {
+        "message": "自適應更新"
+    },
+    "base_interval": {
+        "message": "基本間隔"
+    },
+    "notifications": {
+        "message": "通知"
+    },
+    "notify_limit": {
+        "message": "接近限制時通知"
+    },
+    "notify_reset": {
+        "message": "重設時通知"
+    },
+    "threshold": {
+        "message": "閾值"
+    },
+    "clear": {
+        "message": "清除"
+    },
+    "copy": {
+        "message": "複製"
+    },
+    "delete_asset": {
+        "message": "刪除"
+    },
+    "ctx_warn_label": {
+        "message": "180k+ 遺忘風險"
+    },
+    "ctx_warn_title": {
+        "message": ">180k 風險"
+    },
+    "waiting_prompt": {
+        "message": "等待提示詞..."
+    }
+}
